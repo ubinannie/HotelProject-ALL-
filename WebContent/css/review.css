@@ -1,0 +1,145 @@
+body{
+	margin-top: 100px;
+	line-height: 1.6
+}
+
+.container{
+	width: 800px;
+	margin: 0 auto;
+}
+
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul.tabs li{
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+ul.tabs li.current{
+	background: #ededed;
+	color: #222;
+}
+
+.tab-content{
+	display: none;
+	background: #ededed;
+	padding: 15px;
+}
+
+.tab-content.current{
+	display: inherit;
+}
+
+.deletebtn{
+	margin-right: 100px;
+text-align: right;
+}
+.delConfirm{
+	padding: 3px;
+  font-size: 13px;
+  cursor: pointer;
+  border: 1px solid #5D5D5D;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.replyView{
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+	margin-left: 80px;
+	margin-top:20px;	
+	width: 600px;
+}
+
+#replyView{
+	padding: 5px;
+	font-size: 15px;
+	width: 500px;
+	border-radius: 5px;
+	filter:alpha(opacity=70);
+	opacity: 0.7;
+	-moz-opacity:0.3;
+}
+
+.replywirte{
+	margin-left: 80px;
+}
+
+/* 리뷰쓰기 버튼 */
+#writeBtn{
+	margin-top: 10px;
+  border: 2px solid #5D5D5D;
+  background-color: #5D5D5D;
+  border-radius: 5px;
+  color:white;
+  padding-top:5px;
+  padding-bottom:22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.adminId{
+	font-size: 16px;
+	font-weight: 600;
+	font-family: 'Roboto', sans-serif;
+	padding: 10px 0 10px 0;
+	color: #5D5D5D;
+}
+
+.memberId{
+	font-size: 16px;
+	font-weight: 600;
+	font-family: 'Roboto', sans-serif;
+	padding-bottom: 20px;
+	color: #5D5D5D;
+	padding: 40px 0 0 30px;
+	position: relative;
+}
+
+.title{
+	font-size: 20px;
+	font-weight: 600;
+	font-family: 'Roboto', sans-serif;
+	padding-bottom: 20px;
+	color: #353535;
+	padding: 10px;
+	
+}
+
+.txt{
+	font-size: 18px;
+	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+	padding-bottom: 20px;
+	color: #353535;
+	margin-left: 30px;
+}
+
+.guestcontents{
+	background-color: #fff;
+	border-radius: 10px;
+	width: 600px;
+	margin-left: 70px;
+	border: 2px solid #5D5D5D;
+}
+
+.img, .date{
+	padding: 20px;
+}
+
+.date{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	color: #BDBDBD;
+}

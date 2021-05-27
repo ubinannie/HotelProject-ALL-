@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+.body__container {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+a {
+  text-decoration: none;
+}
+
+/* INNER LEFT / RIGHT */
+.float--left {
+  float: left;
+}
+.float--right {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* BTN */
+.btn {
+  display: flex;
+  align-items: center;
+  height: 34px;
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.5;
+  text-align: center;
+  /* linear-gradient(DIRECTION, COLOR1, COLOR2, ...); */
+  cursor: pointer;
+  position: relative;
+}
+.btn:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .07);
+}
+
+/* INPUT */
+.input--text {
+  height: 34px;
+  padding: 0 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075); /* .75 아니고 .075 주의 */
+}
+.input--text:focus {
+  border-color: #51a7e8 !important; /* header #search 선택자를 덮어쓰기 위해서 사용 */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075), 0 0 5px rgba(81, 167, 232, .5);
+}
+/* Vendor prefix(브라우저 업체별 접두어) */
+.input--text::-webkit-input-placeholder { color: #cacaca; }
+.input--text:-ms-input-placeholder      { color: #cacaca; }
+.input--text::-moz-placeholder          { color: #cacaca; }
+
+/* SUMMARY */
+.summary__title {
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: 18px;
+}
+.summary__description {
+  font-size: 26px;
+  font-weight: 300;
+  color: #767676;
+  line-height: 1.5;
+}
+
+/* SECTION */
+.section {
+  position: relative;
+}
+.section .inner {
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+/* HEADER */
+header {
+ 	border-bottom: 1px solid rgba(0, 0, 0, .75);
+ 	box-shadow: 0 0 5px rgba(0, 0, 0, .75);
+ 	background: #F15F5F;
+}
+header .inner {
+  height: 78px;
+}
+/* Menu group(Left) */
+header .menu-group {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+header .logo {
+  margin-right: 10px;
+}
+header .logo a {
+  background: url("../img/logo.svg");
+  width: 32px;
+  height: 32px;
+  display: block;
+  text-indent: -9999px; /* 대체 텍스트 */
+}
+header .logo a:hover {
+  background: url("../img/logo_on.svg");
+}
+
+
+/* Sign group(Right) */
+header .sign-group {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+header .btn-group {
+  order: 3;
+  display: flex;
+  
+}
+header .btn-group .sign-in {
+  margin-right: 4px;
+}
+#search-form {
+  order: 1;
+  margin-right: 12px;
+}
+#search {
+  width: 160px;
+  font-size: 14px;
+}
+#search + [type="submit"] {
+  display: none;
+}
+
+.navi{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  order: 1;
+
+}
+.navi li{
+  float: left;
+  position: relative;
+  padding: 0;
+  line-height: 40px;
+  color: #fff;
+}
+.navi li a{
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 5px 25px;
+  color: #fff;
+}
+.navi li a:hover{
+  color: black;
+
+}
+.navi li ul{
+  position: absolute;
+  left: 0;
+  width: 170px;
+  background-color: #333;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
+.navi li:hover ul{
+  opacity: 1;
+}
+.navi li ul li{
+  float: none;
+  position: static;
+  height: 0;
+  line-height: 0;
+  background: none;
+}
+
+.navi li:hover ul li{
+  height: 30px;
+  line-height: 20px;
+  padding: 5px 0;
+}
+.navi li ul li :hover{
+  background-color: #fff;
+  color: #4078c0;
+}
+#toggle-btn {
+  display: none;
+  background: url("../img/toggle-btn.svg");
+  width: 18px;
+  height: 24px;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+header .view{
+    font-size: 25px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: 13%;
+}
+#required_wrap .reser_list {
+    margin-top: 30px;
+    margin-left: 20%;
+    padding-bottom: 3%;
+    color:black;
+    font-size: 20px;
+    font-weight: 600; 
+}
+.required_frm {
+	width: 450px;
+	margin-left: 33%;
+	padding-right: 30px;
+	float: left;
+}
+.required_frm p{
+	font-size: 23px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	
+}
+.required_frm input[type=text] {
+	width: 65%;
+	padding: 5px 12px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+textarea{resize: none};
+
+.hotel_Info_frm .hotel_Info .required_group .Info p {
+	height: 70px;
+}
+.hotel_Info_frm .hotel_Info .required_group .Info  p strong{
+	display: block;
+	margin-bottom: 10px;
+	color: #BDBDBD;
+}
+.hotel_Info_frm .hotel_Info .required_group .Info p #re_info{
+	margin-top: 5px;
+}
+.hotel_Info_frm .hotel_Info .required_group .res_pri p{
+	height: 70px;
+}
+.hotel_Info_frm .hotel_Info .required_group .res_pri  p strong{
+	display: block;
+	margin-bottom: 10px;
+	color: #BDBDBD;
+}
+
+.required_group .Info p {
+    margin-bottom: 29px;
+    color: rgba(0,0,0,0.87);
+    text-align: left;
+}
+.hotel_Info_frm input[type=button] {
+  background-color: #CC3D3D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
