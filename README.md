@@ -13,6 +13,7 @@
 
 업무분담
 - (me)장유빈 : 로그인 / 회원가입 / 마이페이지 / pt제작
+- https://github.com/ubinannie/HotelProject-OnlyLogin-Join-Mypage-
 - 나상원 : 예약페이지 / 메인페이지
 - 윤종흠 : 결제페이지
 - 김성수 : 더보기 (공지사항 / 자주묻는 질문 / 1:1문의) / css (상단바 / 메인페이지) / 페이지 결합
